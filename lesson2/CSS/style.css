@@ -1,0 +1,16 @@
+header{
+    background: yellow;
+}
+h1{
+    color: red;
+    text-align: center;
+    display: inline;
+}
+#text-right {
+    text-align: right;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
