@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.eot");
+  src: local("☺"), url("../fonts/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/Gilroy-Bold.ttf") format("truetype"),
+    url("../fonts/Gilroy-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.eot");
+  src: local("☺"), url("../fonts/Gilroy-Medium.woff") format("woff"),
+    url("../fonts/Gilroy-Medium.ttf") format("truetype"),
+    url("../fonts/Gilroy-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: medium;
+}
+body {
+  font-family: "Gilroy";
+  background-color: #ffffff;
+}
+.wrap {
+  width: 1145px;
+  margin: 0 auto;
+}
+header {
+  width: 943px;
+  margin: 0 auto;
+  height: 88px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 60px;
+  color: #828282;
+  scroll-behavior: smooth;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline 4px blue;
+}
+
+.line {
+  margin: 0 auto;
+  width: 943px;
+  height: 0px;
+  border: 1px solid #828282;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.wrap-info {
+  display: flex;
+}
+.person-info {
+  width: 943px;
+  margin: 0 auto;
+  padding-bottom: 104px;
+}
+.name {
+  height: 123px;
+  width: 118px;
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: 700;
+  color: #070707;
+  margin: 40px 0 34px;
+}
+
+.profession {
+  width: 155px;
+  height: 44px;
+  color: #070707;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 94px 350px 0 298px;
+}
+
+.switch {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin: 66px 0;
+}
+#switch-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.about {
+  width: 100%;
+  height: 506px;
+  background-color: #f6f6f6;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 120px;
+}
+.about-head {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: #070707;
+  margin-bottom: 34px;
+}
+
+.about-p {
+  margin: 0 auto 34px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+  width: 486px;
+}
+.skills {
+  width: 100%;
+  height: 610px;
+  padding-top: 91px;
+}
+
+.skills-head {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: #070707;
+}
+
+.skills-p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+  margin-top: 70px;
+}
+
+.skiils-LIST {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-list {
+  height: 206px;
+  width: 166px;
+  margin-top: 80px;
+}
+
+.skills-icon {
+  margin: 0 auto;
+  height: 98px;
+  width: 97px;
+  background: url("IMAGE/Vector\ photoshop\ 1.png") 8px 3px no-repeat;
+}
+
+.stars {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.figure {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+  margin-top: 20px;
+}
+
+.skills-icon2 {
+  margin: 0 auto;
+  height: 98px;
+  width: 97px;
+  background: url("IMAGE/illustratorback.png") 4px 4px no-repeat;
+}
+
+.skills-icon3 {
+  margin: 0 auto;
+  height: 98px;
+  width: 97px;
+  background: url("IMAGE/effectback.png") 4px 4px no-repeat;
+}
