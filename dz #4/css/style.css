@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?yv6e9u");
+  src: url("../fonts/icomoon.eot?yv6e9u#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?yv6e9u") format("truetype"),
+    url("../fonts/icomoon.woff?yv6e9u") format("woff"),
+    url("../fonts/icomoon.svg?yv6e9u#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change ../fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevrons-down:before {
+  content: "\e900";
+}
+.icon-social:before {
+  content: "\e901";
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.wrap {
+  background: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  max-width: 1197px;
+  padding: 100px 0px 50px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.container .col-row {
+  padding: 20px;
+  width: 33.33%;
+}
+
+.container .col-row .box-shadow {
+  background-color: #fff;
+  box-shadow: 0px 10px 40px rgba(200, 202, 255, 0.48);
+  min-width: 195px;
+}
+
+.bottom-box {
+  padding: 18px 28px 21px 40px;
+}
+
+.icon-box {
+  width: 15px;
+  height: 12px;
+}
+
+.record-web {
+  display: flex;
+}
+
+.bottom-box .head {
+  line-height: 1.17rem;
+  margin-bottom: 6px;
+  color: #000637;
+}
+
+.bottom-box .description {
+  line-height: 1.31rem;
+  margin-bottom: 13px;
+}
+
+.record-web {
+  display: flex;
+  align-items: center;
+}
+
+.Zapis-video {
+  font-size: 13px;
+  line-height: 1.54rem;
+  margin-left: 9px;
+  padding-top: 4px;
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-box button {
+  color: #bdbdbd;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.btn-box .icon-chevrons-down {
+  font-size: 24px;
+  color: #bdbdbd;
+  padding-bottom: 10px;
+}
