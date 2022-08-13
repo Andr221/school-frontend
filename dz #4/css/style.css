@@ -46,9 +46,13 @@ body {
 .container {
   display: flex;
   max-width: 1197px;
-  padding: 100px 0px 50px;
+  padding: 0px 0px 50px;
   margin: 0 auto;
   flex-wrap: wrap;
+}
+
+.main-container {
+  padding: 100px 0 100px;
 }
 
 .container .col-row {
@@ -100,10 +104,12 @@ body {
 
 .btn-box {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
 .btn-box button {
+  display: flex;
+  flex-direction: column;
   color: #bdbdbd;
   font-size: 25px;
   font-weight: 400;
@@ -112,5 +118,5 @@ body {
 .btn-box .icon-chevrons-down {
   font-size: 24px;
   color: #bdbdbd;
-  padding-bottom: 10px;
+  align-items: center;
 }
