@@ -162,6 +162,10 @@ h2 {
   line-height: 1.18rem;
 }
 
+.furniture-section {
+  padding: 70px 0 55px;
+}
+
 .second-container .container ul {
   list-style: none;
 }
@@ -229,6 +233,8 @@ h2 {
 
 .three-columns {
   display: flex;
+  margin: -15px;
+  flex-wrap: wrap;
 }
 
 .three-columns .bg-frame {
@@ -242,14 +248,20 @@ h2 {
   margin: 0 0 20px;
 }
 
+.three-columns .left-box {
+  padding: 0 15px 0 0;
+}
+
 .three-columns .price {
   color: #154444;
   font-size: 24px;
   line-height: 1.29rem;
+  margin: 0;
 }
 
 .three-columns .columns {
   padding: 15px;
+  width: 33.33%;
 }
 
 .three-columns .shadow-holder {
@@ -268,4 +280,44 @@ h2 {
 .three-columns .col-list button {
   width: 26px;
   height: 26px;
+  background: #ecf4ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #000;
+  border-radius: 50%;
+}
+
+.three-columns .col-list button:hover {
+  background: #ef5423;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .three-columns .description {
+    margin: 0 0 20px;
+    font-size: 16px;
+  }
+
+  .three-columns .left-box {
+    padding: 0 0 10px;
+    font-size: 10px;
+  }
+
+  .three-columns .bg-frame {
+    flex-wrap: wrap;
+  }
+  .three-columns .right-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  .three-columns .col-list {
+    margin: 0;
+    order: 2;
+  }
 }
