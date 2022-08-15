@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?niyr20');
+  src:  url('fonts/icomoon.eot?niyr20#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?niyr20') format('truetype'),
+    url('fonts/icomoon.woff?niyr20') format('woff'),
+    url('fonts/icomoon.svg?niyr20#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-email-1:before {
+  content: "\e900";
+}
+.icon-Star:before {
+  content: "\e901";
+}
+.icon-Living-room:before {
+  content: "\e902";
+}
+.icon-Kitchen:before {
+  content: "\e903";
+}
+.icon-Dining-room:before {
+  content: "\e904";
+}
+.icon-Office:before {
+  content: "\e905";
+}
+.icon-Bed-room:before {
+  content: "\e906";
+}
+.icon-Hallway:before {
+  content: "\e907";
+}
