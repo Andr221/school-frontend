@@ -116,9 +116,9 @@ h1 {
 }
 
 h2 {
-  font-style: 32px;
+  font-size: 32px;
   line-height: 1.63rem;
-  color: 242424;
+  color: #242424;
 }
 
 #header {
@@ -348,7 +348,9 @@ h2 {
   cursor: pointer;
   color: #fff;
 }
-
+.all-furniture {
+  margin-bottom: 140px;
+}
 .all-furniture h2 {
   text-align: center;
 }
@@ -473,6 +475,83 @@ h2 {
   margin: 0;
 }
 
+.customers-section .container {
+  display: flex;
+}
+
+.customers-section .cust {
+  align-items: flex-start;
+}
+
+.customers-section .img-wrap {
+  position: relative;
+  width: 46%;
+  flex-shrink: 0;
+  padding: 0 0 0 95px;
+  display: flex;
+}
+
+.customers-section .img-wrap img {
+  position: relative;
+  z-index: 2;
+}
+
+.customers-section .img-wrap::before {
+  content: "";
+  width: 88.7%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #244d4d;
+  z-index: 1;
+}
+
+.customers-section .right-side {
+  padding: 105px 0 105px 100px;
+}
+
+.right-side h2 {
+  font-size: 32px;
+  line-height: 48px;
+  margin: 0 0 20px 0;
+}
+
+.right-side p {
+  color: #383738;
+  line-height: 1.4rem;
+}
+
+.right-side .review {
+  display: flex;
+  align-items: center;
+}
+
+.right-side .review .review-text {
+  margin: 0 0 0 10px;
+}
+
+.right-side .review .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19rem;
+  color: #000000;
+  margin: 0 0 6px 0;
+}
+
+.right-side .review .review-text i {
+  font-size: 16px;
+  color: #ffb624;
+}
+
+.right-side .review .review-text span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  color: #000000;
+}
+
 @media screen and (max-width: 1024px) {
   .three-columns .description {
     margin: 0 0 20px;
@@ -524,10 +603,28 @@ h2 {
 
   .all-furniture .two-columns {
     display: block;
+  }
 }
-
 @media screen and (max-width: 768px) {
   .all-furniture .two-columns {
     display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .customers-section .cust {
+    display: block;
+  }
+  .customers-section .img-wrap,
+  .customers-section .img-wrap img {
+    width: 100%;
+  }
+  .customers-section .right-side {
+    padding: 50px 0;
+  }
+
+  .customers-section .cust h2 {
+    font-size: 30px;
+    line-height: 1.4rem;
   }
 }
