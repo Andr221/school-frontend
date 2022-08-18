@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Montserrat:wght@700&display=swap");
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+.form-section {
+  background-color: #d6d6d6;
+  padding: 140px 10px;
+}
+
+.container {
+  background-color: #305f64;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 65px 10px 53px;
+}
+
+.container .content-holder {
+  max-width: 45%;
+  margin: 0 auto;
+}
+
+.container .content-holder h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 0 20px;
+}
+
+.container .content-holder p {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 50px;
+}
+
+.container .content-holder .form-container {
+  background: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 472px;
+  height: 66px;
+  display: flex;
+  padding: 8px 18px;
+  margin: 0 auto;
+}
+
+.content-holder .form-container .field {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  align-items: center;
+}
+
+.content-holder .form-container label {
+  color: rgba(127, 127, 127, 0.66);
+  margin-right: 5px;
+}
+
+.form-container input {
+  width: 100%;
+  height: 100%;
+}
+
+.form-container input::placeholder {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+  color: rgba(127, 127, 127, 0.66);
+}
+
+.form-container button {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #ffffff;
+  background: #ffb624;
+  border-radius: 10px;
+  padding: 15px 32px;
+  transition: all 0.1s;
+}
+
+.form-container button:active {
+  background: #abff24;
+  transform: scale(1.1);
+}
