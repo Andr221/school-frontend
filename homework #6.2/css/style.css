@@ -251,9 +251,6 @@ span {
   margin: 40px;
 }
 
-.bottom-list {
-}
-
 .bottom-list ul {
   display: flex;
   margin-bottom: 40px;
@@ -284,4 +281,31 @@ span {
   text-align: center;
   color: #373c42;
   border-bottom: 1px solid #9181ff;
+}
+
+@media screen and (max-width: 800px) {
+  .second-section .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-section .left-side {
+    margin: 0 auto 50px;
+  }
+
+  .second-section .right-side {
+    margin: 0 auto;
+  }
+
+  .second-section .right-side .top-rs {
+    margin: 0 auto 50px;
+  }
+
+  .second-section .right-side .bottom-rs {
+    margin: 0 auto;
+  }
+
+  .bottom-section .container {
+    padding: 0 0 50px;
+  }
 }
