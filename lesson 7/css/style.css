@@ -1,0 +1,30 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.scroll {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th {
+  text-align: start;
+  border: 1px solid black;
+}
+
+td {
+  text-align: start;
+  border: 1px solid black;
+}
