@@ -1,0 +1,80 @@
+#wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+a {
+  color: $white;
+  font: 600 16px/1.2 $base-font-sans-serif;
+
+  &:hover {
+    color: $color-1;
+  }
+}
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  .container {
+    max-width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    li {
+      padding: 0 22px;
+    }
+  }
+}
+
+.container {
+  max-width: 1094px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+section {
+  min-height: 100vh;
+  background: url("../../img/mainpic.jpg") 20% 0 / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $white;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.1) 100%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  p {
+    font: 500 28px/1.21 $base-font-sans-serif;
+    margin-bottom: 35px;
+  }
+}
