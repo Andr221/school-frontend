@@ -15,26 +15,6 @@ a {
     color: $color-1;
   }
 }
-#header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  .container {
-    max-width: 1320px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .menu {
-    display: flex;
-    align-items: center;
-    li {
-      padding: 0 22px;
-    }
-  }
-}
 
 .container {
   max-width: 1094px;
@@ -42,39 +22,47 @@ a {
   padding: 0 10px;
 }
 
-section {
-  min-height: 100vh;
-  background: url("../../img/mainpic.jpg") 20% 0 / cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: $white;
-  position: relative;
+.custom-checkbox-form {
+  padding: 50px;
+}
 
-  &::before {
-    content: "";
+.custom-checkbox {
+  input {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.9) 0%,
-      rgba(0, 0, 0, 0.1) 100%,
-      rgba(0, 0, 0, 0.4) 100%
-    );
+    left: -9999px;
+    z-index: -10;
+
+    &:checked ~ label {
+      &::before {
+        opacity: 1;
+      }
+    }
   }
 
-  .container {
+  label {
     position: relative;
-    z-index: 2;
-  }
+    padding: 0 0 0 26px;
+    cursor: pointer;
 
-  p {
-    font: 500 28px/1.21 $base-font-sans-serif;
-    margin-bottom: 35px;
+    &::after {
+      content: "";
+      display: inline-block;
+      vertical-align: top;
+      width: 16px;
+      height: 16px;
+      border: 1px solid black;
+      margin-right: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &::before {
+      position: absolute;
+      top: 2;
+      left: 2px;
+      font-size: 15px;
+      opacity: 0;
+    }
   }
 }

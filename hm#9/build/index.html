@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Title</title>
+    <link rel="stylesheet" href="icons/icons.css" />
+    <link rel="stylesheet" href="fonts/font.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link media="all" rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <main>
+        <div class="container">
+          <h1>checkout</h1>
+          <div class="bread-crumb">
+            <span> <i class="icon-Arrow-2"></i> Main</span>
+            <span>Shopping cart</span>
+          </div>
+          <div class="two-forms">
+            <div class="left-form">
+              <strong>details</strong>
+              <form action="" class="form1">
+                <div class="field">
+                  <input type="text" id="" placeholder="First name*" />
+                </div>
+                <div class="field">
+                  <input type="text" id="" placeholder="Last name*" />
+                </div>
+                <div class="field">
+                  <input type="email" id="" placeholder="E-mail*" />
+                </div>
+                <div class="field">
+                  <input type="tel" id="" placeholder="Phone" />
+                </div>
+                <div class="field">
+                  <input type="text" id="" placeholder="Adress*" />
+                </div>
+                <div class="field">
+                  <input type="text" id="" placeholder="City*" />
+                </div>
+                <div class="textarea">
+                  <textarea
+                    name=""
+                    placeholder="Comments"
+                    rows="auto"
+                  ></textarea>
+                </div>
+
+                <span class="required">* Required fields</span>
+                <div class="two-forms-bottom">
+                  <div class="checkbox-cust">
+                    <input type="checkbox" id="1" />
+                    <label for="1" class="icon-checkmark"
+                      >By continuing to Checkout, you are agreeing to our
+                      <a href="">Terms of Use</a> and
+                      <a href="">Privacy Policy</a> .</label
+                    >
+                  </div>
+                  <button type="submit" class="icon-Arrow-1">
+                    <span>next step</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="right-side">
+              <div class="goods-info">
+                <div class="right-side_img-holder">
+                  <img
+                    src="img/116700549_298847891426368_6966245055361223117_n.jpg"
+                    alt="ooo"
+                  />
+                </div>
+                <div class="right-side_right">
+                  <div class="right-side_head">
+                    <p>Soap “Seacaost”</p>
+                    <button type="button">X</button>
+                  </div>
+                  <div class="count-price">
+                    <div class="counter-holder">
+                      <button class="counter" data-direction="minus">-</button>
+                      <input type="text" class="counter-value" value="0" />
+                      <button class="counter" data-direction="plus">+</button>
+                    </div>
+                    <span class="price">5.20$</span>
+                  </div>
+                </div>
+              </div>
+              <div class="goods-info">
+                <div class="right-side_img-holder">
+                  <img
+                    src="img/129406917_675054169831805_6260252447369597029_n.jpg"
+                    alt="ooo"
+                  />
+                </div>
+                <div class="right-side_right">
+                  <div class="right-side_head">
+                    <p>Box “Christmas”</p>
+                    <button type="button">X</button>
+                  </div>
+                  <div class="count-price">
+                    <div class="counter-holder" data-counter>
+                      <button class="counter minus" data-direction="minus">
+                        -
+                      </button>
+                      <input type="text" class="counter-value" value="1" />
+                      <button class="counter plus" data-direction="plus">
+                        +
+                      </button>
+                    </div>
+                    <span class="price">26$</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ship">
+                <form action="#">
+                  <div class="radio-holder">
+                    <input type="radio" name="shipping" id="2" />
+                    <label for="2">Ship</label>
+                    <p>
+                      In stock and ready to ship Shipping: Standard shipping
+                      Arrives: Fri, 9/24 – Tue, 9/28
+                    </p>
+                  </div>
+                  <div class="radio-holder">
+                    <input type="radio" name="shipping" id="3" />
+                    <label for="3">Pickup</label>
+                    <div class="link-hold"><a href="">Select location</a></div>
+                  </div>
+                </form>
+                <span class="price">5$</span>
+              </div>
+              <div class="total">
+                <span>Subtotal:</span>
+                <span>36,20$</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

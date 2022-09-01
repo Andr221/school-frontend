@@ -1,0 +1,20 @@
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  .container {
+    max-width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    li {
+      padding: 0 22px;
+    }
+  }
+}

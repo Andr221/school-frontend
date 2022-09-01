@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Otto Attac Type';
+    src: url('OttoAttacType-Regular.eot');
+    src: url('OttoAttacType-Regular.eot?#iefix') format('embedded-opentype'),
+        url('OttoAttacType-Regular.woff2') format('woff2'),
+        url('OttoAttacType-Regular.ttf') format('truetype'),
+        url('OttoAttacType-Regular.svg#OttoAttacType-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
