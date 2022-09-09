@@ -29,3 +29,5 @@ home works
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# gulp-htm
