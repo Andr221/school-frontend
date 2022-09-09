@@ -49,7 +49,6 @@ body {
   overflow: hidden;
   position: relative;
   flex-grow: 1;
-  background: blue;
 }
 
 .holder {
@@ -78,5 +77,37 @@ body {
     background-color: yellow;
     top: 0px;
     left: -25px;
+  }
+}
+
+.discount-holder {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+}
+
+.circle {
+  transform: translateY(20px);
+  animation: discount 2s 2 cubic-bezier(0.25, 0.17, 0.74, 1.27) alternate,
+    rounds 1s ease;
+  transform-origin: 50% 20px;
+}
+
+@keyframes discount {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes discount {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
