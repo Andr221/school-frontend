@@ -1,0 +1,286 @@
+$breakpoints: (
+  "xs-phone": 375px,
+  "phone": 480px,
+  "tablet": 768px,
+  "desktop": 1024px,
+  "widescreen": 1200px,
+);
+
+// keywords
+$media-expressions: (
+  "screen": "screen",
+  "print": "print",
+  "handheld": "handheld",
+  "landscape": "(orientation: landscape)",
+  "portrait": "(orientation: portrait)",
+  "retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
+  "retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)",
+);
+
+// ligatured operators ≥ ≤
+
+@import "vendors/include-media";
+@import "vendors/normalize";
+
+@import "base/variables";
+@import "base/functions";
+@import "base/mixins";
+@import "base/helpers";
+@import "base/reset";
+@import "base/typography";
+@import "base/forms";
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  @include media("<desktop") {
+    font-size: 14px;
+  }
+
+  @include media("<phone") {
+    font-size: 13px;
+  }
+}
+
+#wrapper {
+  padding: 89px 0 0;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+
+  @include media("<=xs-phone") {
+    padding: 0;
+  }
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+
+  .container {
+    position: relative;
+  }
+}
+
+#nav {
+  @include media("<tablet") {
+    position: absolute;
+    right: -250vw;
+    transition: all 1s;
+    height: 100%;
+
+    .menu {
+      display: block;
+      height: 100vh;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0 -10px;
+  padding: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 98%;
+    transform: translateX(-50%);
+    height: 1px;
+    background: $base-color-1;
+  }
+
+  li {
+    padding: 32px 10px 36px;
+    @include media("<tablet") {
+      & {
+        padding: 68px 26px 0;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+    color: $base-color-1;
+
+    &:hover {
+      color: black;
+    }
+    @include media("<tablet") {
+      & {
+        font-size: 34px;
+      }
+    }
+  }
+}
+
+.nav-opener {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 30px;
+  top: 60px;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin: 6px 0 4px 10px;
+  display: inline-block;
+  z-index: 5;
+
+  @include media(">tablet") {
+    display: none;
+  }
+  @include media("<tablet") {
+    &:before,
+    &:after,
+    & span {
+      background: $black;
+      border-radius: 4px;
+      position: absolute;
+      top: 16px;
+      left: 10%;
+      right: 10%;
+      height: 4px;
+      margin-top: -2px;
+      transition: all 0.2s linear;
+    }
+    &:before,
+    &:after {
+      content: "";
+      top: 10px;
+    }
+    &:after {
+      top: 22px;
+    }
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.nav-active {
+  #nav {
+    right: 0;
+    width: 100%;
+  }
+
+  .menu {
+    background: #fff;
+  }
+
+  .nav-opener {
+    span {
+      opacity: 0;
+    }
+
+    &:after,
+    &:before {
+      transform: rotate(45deg);
+      top: 16px !important;
+      left: 15%;
+      right: 15%;
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .toggler {
+    display: block !important;
+    z-index: 10;
+  }
+}
+
+.section {
+  padding: 0 0 104px;
+
+  .head-text {
+    display: flex;
+    min-height: 188px;
+    padding: 30px 0;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    @include media("<=xs-phone") {
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 10px;
+      padding: 58px 0 36px;
+    }
+  }
+
+  h1 {
+    font-weight: 700;
+    max-width: 140px;
+    padding: 0 20px 12px 0;
+
+    @include media("<=xs-phone") {
+      margin: 0 0 23px;
+      padding: 0;
+    }
+  }
+
+  p {
+    max-width: 176px;
+    font-size: 18px;
+    line-height: 1.22;
+    padding: 0 20px 20px 0;
+
+    @include media("<=xs-phone") {
+      padding: 0;
+    }
+  }
+
+  .toggler {
+    margin: 0px -26px 46px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    transform: rotate(-90deg);
+    transition-delay: 0.5s;
+
+    @include media("<tablet") {
+      display: none;
+      position: absolute;
+      bottom: 10%;
+      right: 10%;
+    }
+
+    .eng {
+      color: $base-color-2;
+      font-weight: 700;
+    }
+  }
+
+  .img-holder {
+    position: relative;
+    height: 387px;
+    width: 100%;
+    background: url("../img/foto-big.jpg") center / cover no-repeat;
+
+    @include media("<=xs-phone") {
+      height: 478px;
+      background: url("../img/foto-small.jpg") center / cover no-repeat;
+    }
+  }
+}
