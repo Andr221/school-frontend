@@ -1,5 +1,9 @@
 .fifth-sectiom {
   margin: 0 0 240px;
+  @include media("<=phone") {
+    margin: 0 0 60px;
+  }
+
   h2 {
     text-align: center;
     line-height: 1.5;
@@ -31,6 +35,10 @@
     max-height: 239px;
     padding: 0 15px;
 
+    @include media("<=phone") {
+      padding: 0 0 15px;
+    }
+
     img {
       width: 100%;
     }
@@ -60,6 +68,10 @@
     @include media("<widescreen") {
       width: 100%;
     }
+
+    @include media("<=phone") {
+      padding: 30px;
+    }
   }
 
   .achievments-row {
@@ -80,9 +92,14 @@
     color: $base-color-1;
     width: 33%;
     min-width: 140px;
+
     @include media("<widescreen") {
       font-size: 50px;
       line-height: 0.8;
+    }
+
+    @include media("<=phone") {
+      padding: 0 0 30px;
     }
 
     span {
@@ -110,6 +127,11 @@
       line-height: 321px;
       color: #ffffff;
       z-index: -1;
+
+      @include media("<=phone") {
+        font-size: 180px;
+        left: -20px;
+      }
     }
   }
 
