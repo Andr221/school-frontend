@@ -1,0 +1,129 @@
+.fifth-sectiom {
+  margin: 0 0 240px;
+  h2 {
+    text-align: center;
+    line-height: 1.5;
+    columns: $base-color-3;
+    margin: 0 0 20px;
+
+    @include media("<widescreen") {
+      font-size: 50px;
+      color: $base-color-3;
+    }
+
+    @include media("<desktop") {
+      font-size: 40px;
+      line-height: 1.2;
+      color: $base-color-3;
+    }
+  }
+
+  .img-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 12.2%;
+    margin: 0 -15px;
+    justify-content: space-between;
+  }
+  .logo-holder {
+    max-width: 326px;
+    max-height: 239px;
+    padding: 0 15px;
+
+    img {
+      width: 100%;
+    }
+  }
+  .two-columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .img-holder {
+    flex: 0 1 38.15%;
+    @include media("<widescreen") {
+      display: none;
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .left-side {
+    width: 61.85%;
+    background: #ccf0e6;
+    padding: 50px 100px 50px 135px;
+    z-index: 1;
+
+    @include media("<widescreen") {
+      width: 100%;
+    }
+  }
+
+  .achievments-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 120px;
+    @include media("<widescreen") {
+      margin: 0 0 60px;
+    }
+  }
+  .achievement {
+    display: inline-block;
+    align-items: flex-start;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 0.8;
+    color: $base-color-1;
+    width: 33%;
+    min-width: 140px;
+    @include media("<widescreen") {
+      font-size: 50px;
+      line-height: 0.8;
+    }
+
+    span {
+      font-size: 28px;
+
+      @include media("<widescreen") {
+        font-size: 20px;
+        line-height: 0.8;
+      }
+    }
+  }
+
+  .q-holder {
+    margin: 0 0 60px;
+    position: relative;
+
+    &::before {
+      content: "“";
+      position: absolute;
+      top: -100px;
+      left: -58px;
+      font-family: "Port Lligat Sans";
+      font-weight: 400;
+      font-size: 300px;
+      line-height: 321px;
+      color: #ffffff;
+      z-index: -1;
+    }
+  }
+
+  blockquote {
+    margin: 0;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    color: #486958;
+    z-index: 2;
+  }
+  .author {
+    color: $base-color-1;
+    font-style: italic;
+    font-size: 24px;
+  }
+}

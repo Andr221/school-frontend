@@ -1,0 +1,120 @@
+.second-section {
+  margin: 0 0 150px;
+  h2 {
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 1.5;
+    text-align: center;
+    color: #1c2323;
+
+    @include media("<widescreen") {
+      font-size: 50px;
+      color: $base-color-3;
+      margin: 0 0 20px;
+    }
+
+    @include media("<desktop") {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+  }
+
+  p {
+    max-width: 510px;
+    text-align: center;
+    margin: 0 auto 71px;
+
+    @include media("<widescreen") {
+      margin: 0 auto 40px;
+    }
+  }
+
+  .fake-vid {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media("<desktop") {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .img-holder {
+    position: relative;
+    width: 66%;
+    height: 350px;
+    overflow: hidden;
+    z-index: 1;
+
+    @include media("<desktop") {
+      width: 100%;
+    }
+
+    .play-bg {
+      position: absolute;
+      bottom: 40px;
+      right: 0;
+      transform: translateX(50%);
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.4);
+
+      @include media("<desktop") {
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+
+      .icon-play {
+        text-align: center;
+        line-height: 1.8;
+        border-radius: 50%;
+        transform: translate(14px, 14px);
+        font-size: 55px;
+        color: #fec62d;
+        display: inline-block;
+        background: #fff;
+        width: 78%;
+        height: 78%;
+        z-index: 1;
+      }
+    }
+
+    iframe {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .right-side {
+    width: 34%;
+    background: #ccf0e6;
+    padding: 70px 6.9% 70px 7.2%;
+
+    @include media("<widescreen") {
+      padding: 50px 6% 50px 6%;
+    }
+
+    @include media("<desktop") {
+      width: 100%;
+    }
+
+    p {
+      text-align: left;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.5;
+      color: #486958;
+      margin: 0 0 41px;
+
+      @include media("<widescreen") {
+        font-size: 18px;
+        line-height: 1.3;
+      }
+    }
+
+    span {
+    }
+  }
+}

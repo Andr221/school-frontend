@@ -1,0 +1,166 @@
+$breakpoints: (
+  "xs-phone": 320px,
+  "phone": 480px,
+  "tablet": 768px,
+  "desktop": 1024px,
+  "widescreen": 1200px,
+);
+
+// keywords
+$media-expressions: (
+  "screen": "screen",
+  "print": "print",
+  "handheld": "handheld",
+  "landscape": "(orientation: landscape)",
+  "portrait": "(orientation: portrait)",
+  "retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
+  "retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)",
+);
+
+// ligatured operators ≥ ≤
+
+@import "vendors/include-media";
+@import "vendors/normalize";
+
+@import "base/variables";
+@import "base/functions";
+@import "base/mixins";
+@import "base/helpers";
+@import "base/reset";
+@import "base/typography";
+@import "base/forms";
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  @include media("<desktop") {
+    font-size: 14px;
+  }
+
+  @include media("<phone") {
+    font-size: 13px;
+  }
+}
+
+#wrapper {
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  background: rgb(230, 221, 221);
+  padding: 15px;
+}
+
+.box-shadow {
+  max-width: 930px;
+  margin: 0 auto;
+  box-shadow: 3px 3px 15px rgba(31, 4, 31, 0.6);
+}
+
+.container {
+  padding: 100px 15px 40px;
+  background: #fff;
+}
+
+#header {
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .job-position {
+    display: block;
+    text-align: center;
+
+    span {
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+}
+
+.visual-section {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px 20px;
+  }
+
+  strong {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+  }
+
+  li {
+    list-style: none;
+    padding: 0 0 0 15px;
+    margin: 0 0 10px;
+  }
+
+  .bold-text {
+    font-weight: 700;
+  }
+
+  .left-section {
+    width: 40%;
+    background: rgb(102, 12, 102);
+    padding: 30px 15px;
+
+    .slider {
+    }
+
+    .left-section-text {
+      margin: 0 0 20px;
+      color: #fff;
+    }
+
+    p {
+      color: #fff;
+    }
+
+    .contact-list {
+      span {
+        padding: 0 0 0;
+        display: inline-block;
+        margin: 0 4px 0 0;
+
+        &::after {
+          content: ":";
+        }
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+          color: blue;
+        }
+
+        &:visited {
+          color: rgb(122, 116, 116);
+        }
+      }
+    }
+  }
+
+  .right-section {
+    width: 60%;
+    padding: 20px 15px;
+
+    .right-section-text {
+      margin: 0 0 30px;
+    }
+
+    .skill-list {
+      margin: 0 0 0 30px;
+      li {
+        padding: 0;
+        list-style: disc;
+      }
+    }
+  }
+}
