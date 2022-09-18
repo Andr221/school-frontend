@@ -1,11 +1,16 @@
 .second-section {
   margin: 0 0 150px;
+  @include media("<desktop") {
+    margin: 0 0 50px;
+  }
+
   h2 {
     font-weight: 800;
     font-size: 70px;
     line-height: 1.5;
     text-align: center;
     color: #1c2323;
+    margin-bottom: 20px;
 
     @include media("<widescreen") {
       font-size: 50px;
@@ -115,6 +120,11 @@
     }
 
     span {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: #486958;
+      letter-spacing: 0.2rem;
     }
   }
 }

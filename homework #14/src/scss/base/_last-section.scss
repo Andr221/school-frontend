@@ -45,12 +45,31 @@
     font-size: 25px;
     line-height: 38px;
     color: #486958;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 135px;
+      height: 16px;
+      bottom: -37px;
+      left: 0;
+      position: absolute;
+      border-bottom: 5px solid #58a9a5;
+      border-top: 5px solid #58a9a5;
+
+      @include media("<desktop") {
+        bottom: -37px;
+        left: 50%;
+        transform: translatex(-50%);
+      }
+    }
 
     @include media("<widescreen") {
       font-size: 20px;
     }
     @include media("<desktop") {
       text-align: center;
+      margin: 0 0 50px;
     }
   }
 
