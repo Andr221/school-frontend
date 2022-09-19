@@ -48,7 +48,7 @@
     width: 66%;
     height: 350px;
     overflow: hidden;
-    z-index: 1;
+    z-index: 3;
 
     @include media("<desktop") {
       width: 100%;
@@ -63,6 +63,7 @@
       height: 128px;
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.4);
+      z-index: 5;
 
       @include media("<desktop") {
         bottom: 50%;
@@ -81,7 +82,6 @@
         background: #fff;
         width: 78%;
         height: 78%;
-        z-index: 1;
       }
     }
 
