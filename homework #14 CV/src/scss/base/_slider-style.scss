@@ -74,13 +74,25 @@
   }
   /* Точки (булиты) */
   .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .slick-dots li {
+    list-style: none;
+    padding: 10px;
   }
   /* Активная точка */
-  .slick-dots li.slick-active {
+  .slick-dots li.slick-active button {
+    background: none;
+    border: 1px solid #fff;
   }
   /* Элемент точки */
   .slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
   }
 }

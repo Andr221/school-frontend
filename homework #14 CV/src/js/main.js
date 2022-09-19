@@ -4,5 +4,7 @@
 //= slick.min.js
 
 $(document).ready(function () {
-  $(".slider").slick();
+  $(".slider").slick({
+    dots: true,
+  });
 });
