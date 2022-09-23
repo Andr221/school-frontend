@@ -85,6 +85,23 @@
     }
   }
 
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .img-holder {
+      margin: 0 0 50px;
+      @include media("<tablet") {
+        margin: 0;
+      }
+    }
+
+    @include media("<tablet") {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   .col-title {
     display: inline-block;
     vertical-align: top;

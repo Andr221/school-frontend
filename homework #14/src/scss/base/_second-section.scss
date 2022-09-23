@@ -22,6 +22,11 @@
       font-size: 40px;
       line-height: 1.2;
     }
+
+    @include media("<tablet") {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
   }
 
   p {
@@ -31,6 +36,10 @@
 
     @include media("<widescreen") {
       margin: 0 auto 40px;
+    }
+
+    @include media("<tablet") {
+      margin: 0 auto 10px;
     }
   }
 

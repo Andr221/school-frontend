@@ -214,7 +214,7 @@ p {
       }
 
       &:hover {
-        font-weight: 700;
+        font-weight: 400;
         color: $base-color-1;
 
         &::after {
@@ -352,6 +352,10 @@ p {
 
 .top-section {
   margin: 0 0 105px;
+
+  @include media("<=tablet") {
+    margin: 0 0 50px;
+  }
   .two-colums {
     display: flex;
     align-items: flex-start;
@@ -403,6 +407,10 @@ p {
       line-height: 1.2;
       color: $base-color-3;
       margin: 0 0 20px;
+    }
+
+    @include media("<tablet") {
+      font-size: 35px;
     }
   }
 
